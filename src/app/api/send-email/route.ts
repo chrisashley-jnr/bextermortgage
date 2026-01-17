@@ -15,10 +15,11 @@ export async function POST(request: Request) {
             );
         }
 
+        const port = Number(process.env.EMAIL_PORT) || 587;
         const transporter = nodemailer.createTransport({
-            host: process.env.EMAIL_HOST || 'smtp.gmail.com', // Default to Gmail, user can change
-            port: Number(process.env.EMAIL_PORT) || 587,
-            secure: false, // Use TLS
+            host: process.env.EMAIL_HOST || 'mail.bextermortgage.com',
+            port: port,
+            secure: port === 465, // true for 465, false for other ports
             auth: {
                 user: process.env.EMAIL_USER,
                 pass: process.env.EMAIL_PASS,
