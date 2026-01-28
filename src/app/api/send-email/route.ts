@@ -62,7 +62,7 @@ export async function POST(request: Request) {
         // Send the email
         await transporter.sendMail({
             from: process.env.EMAIL_USER,
-            to: 'chrisashley1061@gmail.com', // Testing email
+            to: 'emmanuelbriggs@bextermortgage.com', // Official email
             subject: subject,
             html: htmlContent,
             replyTo: data.email, // Allow replying directly to the user

@@ -62,7 +62,7 @@ export default function ContactPage() {
             <span className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide uppercase text-primary bg-primary/5 rounded-full">
               Contact Us
             </span>
-            <h1 className="text-5xl font-bold mb-6 text-slate-900">Get in touch with us</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-6 text-slate-900">Get in touch with us</h1>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               Fill out the form below or schedule a meeting with us at your convenience.
             </p>

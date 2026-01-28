@@ -21,7 +21,7 @@ export const Hero = () => {
             <span className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide uppercase text-primary bg-primary/5 rounded-full">
               Best Mortgage Broker
             </span>
-            <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-[1.1] tracking-tight text-primary">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-[1.1] tracking-tight text-primary">
               The <span className="relative inline-block">
                 Experience
                 <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 10" xmlns="http://www.w3.org/2000/svg">
@@ -53,7 +53,7 @@ export const Hero = () => {
         </div>
 
         {/* House Images Group */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 items-end max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-16 items-end max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}

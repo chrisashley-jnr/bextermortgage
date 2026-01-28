@@ -32,7 +32,7 @@ export const StepsSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="lg:w-1/2">
             <span className="text-primary font-semibold tracking-wider uppercase text-sm mb-4 block">Our Approach</span>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
+            <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight">
               UNDERSTANDING YOUR NEEDS
             </h2>
             <p className="text-slate-600 text-lg mb-6 max-w-lg">

@@ -16,7 +16,7 @@ export const ExpertiseSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mb-16">
           <span className="text-primary font-semibold tracking-wider uppercase text-sm mb-4 block">Who we are?</span>
-          <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight">
             We specialize in arranging mortgages for people who've been turned down elsewhere, 
             using our expertise to find the right solution when others can't.
           </h2>

@@ -19,7 +19,7 @@ export const TeamSection = () => {
         <div className="flex items-center justify-between mb-16">
           <div>
             <span className="text-primary font-semibold tracking-wider uppercase text-sm mb-4 block">Our Team</span>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">MEET OUR MORTGAGE EXPERTS</h2>
+            <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold tracking-tight">MEET OUR MORTGAGE EXPERTS</h2>
           </div>
           <div className="hidden md:flex items-center gap-4">
             <button className="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-white transition-all">
@@ -31,7 +31,7 @@ export const TeamSection = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {experts.map((expert, index) => (
             <motion.div
               key={index}

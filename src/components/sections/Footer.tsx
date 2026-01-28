@@ -11,10 +11,10 @@ export const Footer = () => {
         {/* CTA Banner */}
         <div className="relative overflow-hidden rounded-[40px] bg-slate-900 p-12 mb-24 md:flex items-center justify-between gap-12 text-white">
           <div className="md:w-1/2 mb-8 md:mb-0 relative z-10">
-            <h2 className="text-4xl font-bold mb-4">Get In Touch For Your Free Consultation</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch For Your Free Consultation</h2>
             <p className="text-slate-400 text-lg">Speak to one of our friendly mortgage experts today and find out your options.</p>
           </div>
-          <div className="flex gap-4 relative z-10">
+          <div className="flex flex-col sm:flex-row gap-4 relative z-10">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-10 py-7 font-bold text-lg">
               Start Now
             </Button>
@@ -26,7 +26,7 @@ export const Footer = () => {
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-6">
               <img src="/images/logos/bexterlogo.svg" alt="Bexter Mortgage" className="h-15 w-auto" />
