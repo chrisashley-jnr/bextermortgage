@@ -102,8 +102,8 @@ export default function ContactPage() {
                       <div className="w-12 h-12 rounded-full bg-white shadow-sm border border-slate-200 flex items-center justify-center text-slate-900 shrink-0">
                         <Phone size={20} />
                       </div>
-                      <a href="tel:6472289447" className="font-medium text-slate-600 hover:text-primary transition-colors">
-                        +1 647-228-9447
+                      <a href="tel:14374849447" className="font-medium text-slate-600 hover:text-primary transition-colors">
+                        +1 437-484-9447
                       </a>
                     </div>
                   </div>

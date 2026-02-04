@@ -15,7 +15,7 @@ export default function FindBrokerPage() {
       role: "Lead Broker & Founder",
       image: "/bexterfounder.jpg", 
       email: "contact@bextermortgage.com",
-      phone: "+1 (647) 228-9447",
+      phone: "+1 (437) 484-9447",
       location: "Toronto, Canada",
       specialties: ["Residential Mortgages", "Expat Mortgages", "Refinancing"],
       bio: "With over a decade of experience, Emmanuel helps clients navigate the complex mortgage landscape with ease and transparency."

@@ -155,7 +155,7 @@ export default function AboutPage() {
                 <div className="space-y-2">
                   <p className="text-slate-700">
                     <span className="font-semibold">Phone:</span>{" "}
-                    <a href="tel:6472289447" className="text-primary hover:underline">647-228-9447</a>
+                    <a href="tel:14374849447" className="text-primary hover:underline">437-484-9447</a>
                   </p>
                   <p className="text-slate-700">
                     <span className="font-semibold">Email:</span>{" "}
