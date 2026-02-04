@@ -7,17 +7,17 @@ import { Button } from "@/components/ui/button";
 export const StepsSection = () => {
   const steps = [
     {
-      icon: <UserCheck className="w-6 h-6 text-primary" />,
+      icon: <UserCheck className="w-6 h-6" />,
       title: "Buying a Home",
       description: "Mortgages are complex, but we make it really simple by doing all the heavy lifting for you. Secure the best mortgage for your unique needs today and years down the road.",
     },
     {
-      icon: <FileText className="w-6 h-6 text-primary" />,
+      icon: <FileText className="w-6 h-6" />,
       title: "Refinance/Renew",
       description: "We'll help you save money and maximize your refinance or renewal strategy through an equity take out, prepayment plan, or cost saving opportunity.",
     },
     {
-      icon: <CheckCircle2 className="w-6 h-6 text-primary" />,
+      icon: <CheckCircle2 className="w-6 h-6" />,
       title: "Investing",
       description: "Finding the right investment opportunity can change your financial future. No matter the scenario, there are always solutions, and it's our job to find you the right one.",
     },
@@ -56,8 +56,8 @@ export const StepsSection = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="flex items-start gap-6 bg-white p-8 rounded-3xl border border-slate-100 hover:shadow-xl hover:shadow-slate-200/50 transition-all group"
               >
-                <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-primary/5 flex items-center justify-center group-hover:bg-primary transition-colors">
-                  <div className="group-hover:text-white transition-colors">
+                <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-primary/5 flex items-center justify-center group-hover:bg-primary transition-all duration-300">
+                  <div className="text-primary group-hover:text-white transition-colors duration-300">
                     {step.icon}
                   </div>
                 </div>

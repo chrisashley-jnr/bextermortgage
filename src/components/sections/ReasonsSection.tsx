@@ -37,22 +37,22 @@ export const ReasonsSection = () => {
       </div>
 
       <div className="container mx-auto px-6">
-        <div className="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {reasons.map((reason, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white rounded-[32px] overflow-hidden border border-slate-100 hover:shadow transition-all group min-w-[280px] md:min-w-[320px] snap-start flex-shrink-0"
+              className="bg-white rounded-[32px] overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300 group flex flex-col h-full"
             >
               <div className="p-6 flex flex-col gap-4 h-[100%]">
-                <div className="flex-1 flex items-center justify-center p-3 bg-slate-50/50 rounded-2xl overflow-hidden h-[180px]">
+                <div className="flex-1 overflow-hidden h-[200px] mb-2 rounded-2xl">
                   <img 
                     src={reason.image} 
                     alt={reason.title} 
-                    className="w-full h-full "
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 
