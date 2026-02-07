@@ -49,7 +49,6 @@ export const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-6">Explore</h4>
             <ul className="space-y-4">
-              <li><Link href="/find-a-broker" className="text-slate-500 hover:text-primary transition-colors">Find a Broker</Link></li>
               <li><Link href="/about" className="text-slate-500 hover:text-primary transition-colors">About</Link></li>
               <li><Link href="/contact" className="text-slate-500 hover:text-primary transition-colors">Contact Us</Link></li>
               <li><Link href="/careers" className="text-slate-500 hover:text-primary transition-colors">Career</Link></li>

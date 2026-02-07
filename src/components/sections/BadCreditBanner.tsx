@@ -23,8 +23,8 @@ export const BadCreditBanner = () => {
             <p className="text-xl text-blue-50 mb-10 opacity-90 leading-relaxed">
               We look past the credit score. We focus on the person. If you've been declined by high street lenders, we are here to help.
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-4">
-              <Link href="/find-a-broker">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/contact">
                 <Button size="lg" className="bg-white text-primary hover:bg-blue-50 text-lg px-10 py-7 rounded-full font-bold">
                   Talk to an Expert
                 </Button>

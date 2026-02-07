@@ -36,14 +36,13 @@ export const Navbar = () => {
           <Link href="/apply" className="text-sm font-medium hover:text-primary transition-colors">Online Application</Link>
 
           <Link href="/contact" className="text-sm font-medium hover:text-primary transition-colors">Contact Us</Link>
-          <div className="h-4 w-[1px] bg-slate-200"></div>
-          <Link href="/calculator" className="text-sm font-medium border border-slate-200 px-10 py-2 rounded-full hover:border-primary hover:text-primary transition-colors">Calculator</Link>
-          <Link href="/find-a-broker">
-            <Button size="sm" className="bg-primary text-sm font-medium hover:bg-primary/80 text-white rounded-full px-7 py-5">
-              Find a Broker
+          <Link href="/calculator">
+            <Button size="sm" className="bg-primary text-sm font-medium hover:bg-primary/80 text-white rounded-full px-10 py-5">
+              Calculator
             </Button>
           </Link>
         </div>
+
 
         {/* Mobile Menu Toggle */}
         <button
@@ -72,13 +71,8 @@ export const Navbar = () => {
             <Link href="/contact" className="font-medium text-lg py-2" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
             <hr className="my-2" />
             <Link href="/calculator" onClick={() => setIsMobileMenuOpen(false)}>
-                <Button variant="outline" className="w-full justify-center py-6 text-lg rounded-xl border-slate-200">
-                    Calculator
-                </Button>
-            </Link>
-            <Link href="/find-a-broker" onClick={() => setIsMobileMenuOpen(false)}>
                 <Button className="w-full bg-primary text-white justify-center py-6 text-lg rounded-xl">
-                    Find a Broker
+                    Calculator
                 </Button>
             </Link>
           </motion.div>
