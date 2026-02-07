@@ -34,8 +34,8 @@ export default function AboutPage() {
       
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-b from-slate-50 to-white">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
+        <div className="container mx-auto px-6 text-center">
+          <div className="max-w-4xl mx-auto">
             <span className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide uppercase text-primary bg-primary/5 rounded-full">
               About Us
             </span>
@@ -43,9 +43,21 @@ export default function AboutPage() {
               LEARN MORE ABOUT <br />
               <span className="text-primary">BEXTER MORTGAGES</span>
             </h1>
-            <p className="text-xl text-slate-600 mb-10 leading-relaxed">
+            <p className="text-xl text-slate-600 mb-12 leading-relaxed">
               At Bexter, we are committed to providing a diverse range of mortgage products to both Ghanaians living abroad and foreigners seeking to acquire or own a property in Ghana.
             </p>
+          </div>
+
+          {/* Instagram Video Embed */}
+          <div className="max-w-4xl mx-auto mt-8 flex justify-center">
+            <div className="w-full max-w-[540px] aspect-[9/16] md:aspect-[4/5] rounded-[40px] overflow-hidden border border-slate-100 bg-white">
+              <iframe 
+                src="https://www.instagram.com/reel/CxVr_xIOhcV/embed" 
+                className="w-full h-full border-none"
+                allowTransparency={true}
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
@@ -79,7 +91,7 @@ export default function AboutPage() {
             <h2 className="text-4xl font-bold mb-12 text-center">Our Services</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {services.map((service, index) => (
-                <div key={index} className="bg-white p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-shadow">
+                <div key={index} id={index === 0 ? "pre-approval" : "refinancing"} className="bg-white p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-shadow">
                   <h3 className="text-2xl font-bold mb-4 text-primary">{service.title}</h3>
                   <p className="text-slate-600 mb-4 leading-relaxed">{service.description}</p>
                   <p className="text-slate-500 text-sm leading-relaxed">{service.details}</p>
@@ -130,6 +142,7 @@ export default function AboutPage() {
       </section>
 
       {/* Founder Section */}
+      {/* 
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
@@ -155,7 +168,7 @@ export default function AboutPage() {
                 <div className="space-y-2">
                   <p className="text-slate-700">
                     <span className="font-semibold">Phone:</span>{" "}
-                    <a href="tel:14374849447" className="text-primary hover:underline">437-484-9447</a>
+                    <a href="tel:14374849447" className="text-primary hover:underline">+1 437-484-9447</a>
                   </p>
                   <p className="text-slate-700">
                     <span className="font-semibold">Email:</span>{" "}
@@ -169,6 +182,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      */}
 
       {/* CTA Section */}
       <section className="py-20 bg-slate-50">

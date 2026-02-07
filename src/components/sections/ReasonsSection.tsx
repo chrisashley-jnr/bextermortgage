@@ -31,9 +31,7 @@ export const ReasonsSection = () => {
         <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
           REASONS WHY YOU SHOULD <br /> CHOOSE US
         </h2>
-        <div className="w-24 h-1.5 bg-primary/20 mx-auto rounded-full overflow-hidden">
-          <div className="w-1/2 h-full bg-primary"></div>
-        </div>
+
       </div>
 
       <div className="container mx-auto px-6">
@@ -62,9 +60,6 @@ export const ReasonsSection = () => {
                   </div>
                   <h3 className="text-xl font-bold mb-3">{reason.title}</h3>
                   <p className="text-slate-500 leading-relaxed mb-4 text-sm">{reason.description}</p>
-                  <button className="font-bold text-primary flex items-center gap-2 ">
-                    Learn More <span className="text-lg">→</span>
-                  </button>
                 </div>
               </div>
             </motion.div>

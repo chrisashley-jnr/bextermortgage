@@ -13,7 +13,7 @@ export default function FindBrokerPage() {
     {
       name: "Emmanuel B. Asiamah Jnr",
       role: "Lead Broker & Founder",
-      image: "/bexterfounder.jpg", 
+      image: "/images/imgs/team_img1.svg", 
       email: "contact@bextermortgage.com",
       phone: "+1 (437) 484-9447",
       location: "Toronto, Canada",

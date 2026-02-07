@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export const BadCreditBanner = () => {
   return (
@@ -23,12 +24,11 @@ export const BadCreditBanner = () => {
               We look past the credit score. We focus on the person. If you've been declined by high street lenders, we are here to help.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <Button size="lg" className="bg-white text-primary hover:bg-blue-50 text-lg px-10 py-7 rounded-full font-bold">
-                Talk to an Expert
-              </Button>
-              <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white/10 bg-transparent text-lg px-10 py-7 rounded-full font-bold">
-                Check Availability
-              </Button>
+              <Link href="/find-a-broker">
+                <Button size="lg" className="bg-white text-primary hover:bg-blue-50 text-lg px-10 py-7 rounded-full font-bold">
+                  Talk to an Expert
+                </Button>
+              </Link>
             </div>
           </div>
         </motion.div>

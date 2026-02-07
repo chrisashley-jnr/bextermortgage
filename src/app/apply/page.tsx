@@ -102,7 +102,7 @@ export default function ApplyPage() {
                     Need help with your application? Our experts are available to guide you through the process.
                   </p>
                   <Button variant="outline" className="w-full border-slate-300 hover:bg-white">
-                    Call 437-484-9447
+                    Call +1 437-484-9447
                   </Button>
                 </div>
               </div>

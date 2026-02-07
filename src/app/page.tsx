@@ -21,7 +21,7 @@ export default function Home() {
       <BadCreditBanner />
       <ReasonsSection />
       <TeamSection />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <LendersSection />
       <Footer />
     </main>

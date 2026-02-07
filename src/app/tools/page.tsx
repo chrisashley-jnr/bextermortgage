@@ -66,9 +66,6 @@ export default function ToolsPage() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-slate-900">{tool.title}</h3>
                 <p className="text-slate-600 mb-8 leading-relaxed h-[120px]">{tool.description}</p>
-                <Link href={tool.link} className="inline-flex items-center gap-2 font-semibold text-primary group-hover:gap-3 transition-all">
-                  Read More <ArrowRight size={16} />
-                </Link>
               </motion.div>
             ))}
           </div>

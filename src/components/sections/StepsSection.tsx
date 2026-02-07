@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, FileText, UserCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export const StepsSection = () => {
   const steps = [
@@ -41,9 +42,11 @@ export const StepsSection = () => {
             <p className="text-slate-600 text-lg mb-10 max-w-lg">
               We exist to offer you the lowest rates in the industry through volume discounts and strong lender relationships. Our highly trained Bexter Mortgage brokers offer unbiased advice that puts you first.
             </p>
-            <Button size="lg" className="rounded-full px-8 py-6 bg-primary text-white font-semibold">
-              Get Started Now
-            </Button>
+            <Link href="/apply">
+              <Button size="lg" className="rounded-full px-8 py-6 bg-primary text-white font-semibold">
+                Get Started Now
+              </Button>
+            </Link>
           </div>
 
           <div className="lg:w-1/2 w-full flex flex-col gap-6">
