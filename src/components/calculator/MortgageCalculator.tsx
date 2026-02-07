@@ -89,7 +89,7 @@ export const MortgageCalculator = () => {
             <Slider
               defaultValue={[propertyValue]}
               max={2000000}
-              min={50000}
+              min={20000}
               step={1000}
               onValueChange={(vals) => {
                  const val = vals[0];
@@ -135,8 +135,11 @@ export const MortgageCalculator = () => {
                 onChange={(e) => setLoanTerm(Number(e.target.value))}
                 className="w-full pl-4 pr-10 py-4 rounded-xl border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none text-lg font-bold text-slate-900 appearance-none bg-white transition-all cursor-pointer"
               >
+                <option value="5">5 years</option>
+                <option value="10">10 years</option>
                 <option value="15">15 years</option>
                 <option value="20">20 years</option>
+                <option value="25">25 years</option>
                 <option value="30">30 years</option>
               </select>
               <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" size={20} />
