@@ -6,11 +6,11 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 export const TeamSection = () => {
   const experts = [
     { name: "Emmanuel Briggs", role: "Chief Executive Officer", img: "/images/imgs/team_img1.svg" },
-    { name: "Dickson Marfo Asiamah", role: "Company Secretary", img: "/images/imgs/team_img2.svg" },
-    { name: "Isaiah Adusei", role: "Business Development Manager", img: "/images/imgs/team_img3.svg" },
-    { name: "Prince Coffie", role: "Sales and Operations Manager", img: "/images/imgs/team_img4.svg" },
+    { name: "Prince Coffie", role: "Sales and Operations Manager", img: "/images/imgs/team_img4.svg" }, 
+    { name: "Anthony D.A. Asare", role: "Financial & Investment Analysis", img: "/images/imgs/team_img6.svg" },
+    { name: "Dickson Marfo Asiamah", role: "Administrative Officer", img: "/images/imgs/team_img2.svg" },
     { name: "Agyabeng Anokye", role: "IT & Marketing Manager", img: "/images/imgs/team_img5.svg" }, 
-    { name: "Anthony D.A. Asare", role: "Financial & Investment Analysis", img: "/images/imgs/team_img6.svg" } 
+    { name: "Isaiah Adusei", role: "Business Development Manager", img: "/images/imgs/team_img3.svg" } 
   ];
 
   return (
