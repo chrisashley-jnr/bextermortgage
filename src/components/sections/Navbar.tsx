@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -9,6 +10,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +19,15 @@ export const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const navLinks = [
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Online Application", href: "/apply" },
+    { name: "Contact Us", href: "/contact" },
+  ];
+
+  const isActive = (path: string) => pathname === path;
 
   return (
     <nav
@@ -30,19 +41,24 @@ export const Navbar = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center gap-5">
-          <Link href="/" className="text-sm font-medium hover:text-primary transition-colors">Home</Link>
-          <Link href="/about" className="text-sm font-medium hover:text-primary transition-colors">About</Link>
-          <Link href="/apply" className="text-sm font-medium hover:text-primary transition-colors">Online Application</Link>
-
-          <Link href="/contact" className="text-sm font-medium hover:text-primary transition-colors">Contact Us</Link>
+        <div className="hidden lg:flex items-center gap-8">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                isActive(link.href) ? "text-primary font-bold" : "text-slate-600"
+              }`}
+            >
+              {link.name}
+            </Link>
+          ))}
           <Link href="/calculator">
             <Button size="sm" className="bg-primary text-sm font-medium hover:bg-primary/80 text-white rounded-full px-10 py-5">
               Calculator
             </Button>
           </Link>
         </div>
-
 
         {/* Mobile Menu Toggle */}
         <button
@@ -60,21 +76,27 @@ export const Navbar = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 right-0 bg-white border-t border-slate-100 p-6 flex flex-col gap-4 lg:hidden shadow-xl max-h-[85vh] overflow-y-auto"
+            className="absolute top-full left-0 right-0 bg-white border-t border-slate-100 p-8 flex flex-col gap-6 lg:hidden shadow-xl max-h-[85vh] overflow-y-auto"
           >
-            <Link href="/" className="font-medium text-lg py-2" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
-            <Link href="/about" className="font-medium text-lg py-2" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
-            
-            <Link href="/apply" className="font-medium text-lg py-2" onClick={() => setIsMobileMenuOpen(false)}>Online Application</Link>
-
-
-            <Link href="/contact" className="font-medium text-lg py-2" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
-            <hr className="my-2" />
-            <Link href="/calculator" onClick={() => setIsMobileMenuOpen(false)}>
-                <Button className="w-full bg-primary text-white justify-center py-6 text-lg rounded-xl">
-                    Calculator
-                </Button>
-            </Link>
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`font-medium text-lg py-3 border-b border-slate-50 transition-colors ${
+                  isActive(link.href) ? "text-primary font-bold" : "text-slate-900"
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {link.name}
+              </Link>
+            ))}
+            <div className="pt-4">
+              <Link href="/calculator" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Button className="w-full bg-primary text-white justify-center py-7 text-lg rounded-xl font-bold">
+                      Calculator
+                  </Button>
+              </Link>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
