@@ -48,14 +48,14 @@ export default function AboutPage() {
             </p>
           </div>
 
-          {/* Instagram Video Embed */}
+          {/* YouTube Video Embed */}
           <div className="max-w-4xl mx-auto mt-8 flex justify-center">
-            <div className="w-full max-w-[540px] aspect-[9/16] md:aspect-[4/5] rounded-[40px] overflow-hidden border border-slate-100 bg-white">
+            <div className="w-full aspect-video rounded-[40px] overflow-hidden border border-slate-100 bg-white">
               <iframe 
-                src="https://www.instagram.com/reel/CxVr_xIOhcV/embed" 
+                src="https://www.youtube.com/embed/tt7cPI-UyAw" 
                 className="w-full h-full border-none"
-                allowTransparency={true}
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
               ></iframe>
             </div>
           </div>
