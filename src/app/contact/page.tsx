@@ -30,7 +30,7 @@ export default function ContactPage() {
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-6 text-slate-900">Get in touch with us</h1>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Fill out the form below or schedule a meeting with us at your convenience.
+              Please feel free to reach out to us at your convenience.
             </p>
           </div>
 
