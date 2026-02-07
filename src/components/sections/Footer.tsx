@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Music2 } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -34,14 +34,14 @@ export const Footer = () => {
               Putting people over mortgages. Find reliable mortgage solutions tailored just for you.
             </p>
             <div className="flex gap-4">
-              <Link href="#" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-slate-400">
+              <Link href="https://www.facebook.com/share/169oQ8b7oT/?mibextid=wwXIfr" target="_blank" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-slate-400">
                 <Facebook size={20} />
               </Link>
-              <Link href="#" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-slate-400">
+              <Link href="https://www.instagram.com/bexter_mortgage__ghana?igsh=b3NsbnZlb3A1bmJ3" target="_blank" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-slate-400">
                 <Instagram size={20} />
               </Link>
-              <Link href="#" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-slate-400">
-                <Linkedin size={20} />
+              <Link href="https://www.tiktok.com/@bexter_mortgage_gh?_r=1&_t=ZS-93j8OBmUTaq" target="_blank" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-slate-400">
+                <Music2 size={20} />
               </Link>
             </div>
           </div>
