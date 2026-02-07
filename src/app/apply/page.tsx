@@ -4,6 +4,7 @@ import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -110,6 +111,41 @@ export default function ApplyPage() {
           </div>
         </div>
       </div>
+
+      {/* Rate Relief Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl font-bold mb-6 text-slate-900">Rate Relief</h2>
+            <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
+              Get a break from higher bank rates. Want the lowest rate around? 
+              Get your BEST rate and product, anytime, with great services that can save you thousands.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Unbiased Advice Section */}
+      <section className="py-20 bg-slate-900 text-white">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl font-bold mb-8">Unbiased, expert advice. Completely free.</h2>
+            <p className="text-lg text-slate-300 mb-6 leading-relaxed">
+              Mortgages can be stressful. Our expert team makes it easy. Whether you apply online or stop by, you get a real person who cares about getting your best mortgage.
+            </p>
+            <p className="text-lg text-slate-300 mb-10 leading-relaxed">
+              We're unified, highly trained and salaried for unbiased advice. And there's no cost or obligation while we deal with the lenders and details for you. It's a relationship for a lifetime of mortgage help.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/contact">
+                <Button size="lg" className="bg-white text-slate-900 hover:bg-slate-100 rounded-full px-10 py-7 font-bold text-lg border-2 border-transparent">
+                  Get a call back
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </main>

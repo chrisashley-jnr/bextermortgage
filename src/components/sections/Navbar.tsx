@@ -3,13 +3,12 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isResourcesOpen, setIsResourcesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,13 +33,8 @@ export const Navbar = () => {
         <div className="hidden lg:flex items-center gap-5">
           <Link href="/" className="text-sm font-medium hover:text-primary transition-colors">Home</Link>
           <Link href="/about" className="text-sm font-medium hover:text-primary transition-colors">About</Link>
-          <div className="relative group">
-            <button className="text-sm font-medium hover:text-primary transition-colors py-4">Resources</button>
-            <div className="absolute top-full left-1/2 -translate-x-1/2 w-48 bg-white border border-slate-100 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2 z-50">
-              <Link href="/apply" className="block px-4 py-2 text-sm text-slate-600 hover:text-primary hover:bg-slate-50 rounded-lg transition-colors">Online Application</Link>
-              <Link href="/tools" className="block px-4 py-2 text-sm text-slate-600 hover:text-primary hover:bg-slate-50 rounded-lg transition-colors">Tools</Link>
-            </div>
-          </div>
+          <Link href="/apply" className="text-sm font-medium hover:text-primary transition-colors">Online Application</Link>
+
           <Link href="/contact" className="text-sm font-medium hover:text-primary transition-colors">Contact Us</Link>
           <div className="h-4 w-[1px] bg-slate-200"></div>
           <Link href="/calculator" className="text-sm font-medium border border-slate-200 px-10 py-2 rounded-full hover:border-primary hover:text-primary transition-colors">Calculator</Link>
@@ -72,32 +66,8 @@ export const Navbar = () => {
             <Link href="/" className="font-medium text-lg py-2" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
             <Link href="/about" className="font-medium text-lg py-2" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
             
-            {/* Mobile Resources Dropdown */}
-            <div>
-              <button 
-                onClick={() => setIsResourcesOpen(!isResourcesOpen)}
-                className="flex items-center justify-between w-full font-medium text-lg py-2"
-              >
-                Resources
-                <ChevronDown size={20} className={`transition-transform duration-200 ${isResourcesOpen ? 'rotate-180' : ''}`} />
-              </button>
-              <AnimatePresence>
-                {isResourcesOpen && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    className="overflow-hidden bg-slate-50 rounded-xl mt-2"
-                  >
-                     <div className="flex flex-col p-4 gap-3">
-                        <Link href="/apply" className="text-slate-600 font-medium" onClick={() => setIsMobileMenuOpen(false)}>Online Application</Link>
-                        <Link href="/calculator" className="text-slate-600 font-medium" onClick={() => setIsMobileMenuOpen(false)}>Calculator</Link>
-                        <Link href="/tools" className="text-slate-600 font-medium" onClick={() => setIsMobileMenuOpen(false)}>Tools</Link>
-                     </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
+            <Link href="/apply" className="font-medium text-lg py-2" onClick={() => setIsMobileMenuOpen(false)}>Online Application</Link>
+
 
             <Link href="/contact" className="font-medium text-lg py-2" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
             <hr className="my-2" />
